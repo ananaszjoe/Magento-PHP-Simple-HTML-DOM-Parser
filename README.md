@@ -33,6 +33,7 @@ Copy the app folder into your Magento 1.X installation's root folder. Empty the 
 ## Quick Start
 
 **Get HTML elements**
+
 **Remember** to call the methods on the Magento helper object: `Mage::helper('htmldom')` e.g.: `Mage::helper('htmldom')->file_get_html('foo.bar')`!
 
 ```php
@@ -49,6 +50,7 @@ foreach($html->find('a') as $element)
 ```
 
 **Modify HTML elements**
+
 **Remember** to call the methods on the Magento helper object: `Mage::helper('htmldom')` e.g.: `Mage::helper('htmldom')->file_get_html('foo.bar')`!
 
 ```php
@@ -63,6 +65,7 @@ echo $html; // Output: <div id="hello">foo</div><div id="world" class="bar">Worl
 ```
 
 **Extract contents from HTML**
+
 **Remember** to call the methods on the Magento helper object: `Mage::helper('htmldom')` e.g.: `Mage::helper('htmldom')->file_get_html('foo.bar')`!
 
 ```php
@@ -72,6 +75,7 @@ echo file_get_html('http://www.google.com/')->plaintext;
 ```
 
 **Srcaping Slashdot!**
+
 **Remember** to call the methods on the Magento helper object: `Mage::helper('htmldom')` e.g.: `Mage::helper('htmldom')->file_get_html('foo.bar')`!
 
 ```php
@@ -92,6 +96,7 @@ print_r($articles);
 ## How to create HTML DOM object?
 
 **Quick way**
+
 **Remember** to call the methods on the Magento helper object: `Mage::helper('htmldom')` e.g.: `Mage::helper('htmldom')->file_get_html('foo.bar')`!
 
 ```php
@@ -106,6 +111,7 @@ $html = file_get_html('test.htm');
 ```
 
 **Object-oriented way**
+
 **Remember** to call the methods on the Magento helper object: `Mage::helper('htmldom')` e.g.: `Mage::helper('htmldom')->file_get_html('foo.bar')`!
 
 ```php
@@ -126,6 +132,7 @@ $html->load_file('test.htm');
 ## How to find HTML elements?
 
 **Basics**
+
 **Remember** to call the methods on the Magento helper object: `Mage::helper('htmldom')` e.g.: `Mage::helper('htmldom')->file_get_html('foo.bar')`!
 
 ```php
@@ -146,6 +153,7 @@ $ret = $html->find('div[id=foo]');
 ```
 
 **Advanced**
+
 **Remember** to call the methods on the Magento helper object: `Mage::helper('htmldom')` e.g.: `Mage::helper('htmldom')->file_get_html('foo.bar')`!
 
 ```php
@@ -166,6 +174,7 @@ $ret = $html->find('a[title], img[title]');
 ```
 
 **Descendant selectors**
+
 **Remember** to call the methods on the Magento helper object: `Mage::helper('htmldom')` e.g.: `Mage::helper('htmldom')->file_get_html('foo.bar')`!
 
 ```php
@@ -183,6 +192,7 @@ $es = $html->find(''table td[align=center]');
 ```
 
 **Nested selectors**
+
 **Remember** to call the methods on the Magento helper object: `Mage::helper('htmldom')` e.g.: `Mage::helper('htmldom')->file_get_html('foo.bar')`!
 
 ```php
@@ -200,6 +210,7 @@ $e = $html->find('ul', 0)->find('li', 0);
 ```
 
 **Attribute filters**
+
 **Remember** to call the methods on the Magento helper object: `Mage::helper('htmldom')` e.g.: `Mage::helper('htmldom')->file_get_html('foo.bar')`!
 
 Supports these operators in attribute selectors:
@@ -216,6 +227,7 @@ Supports these operators in attribute selectors:
 
 
 **Text & Comments**
+
 **Remember** to call the methods on the Magento helper object: `Mage::helper('htmldom')` e.g.: `Mage::helper('htmldom')->file_get_html('foo.bar')`!
 
 ```php
@@ -230,6 +242,7 @@ $es = $html->find('comment');
 ## How to access the HTML element's attributes?
 
 **Get, Set and Remove attributes**
+
 **Remember** to call the methods on the Magento helper object: `Mage::helper('htmldom')` e.g.: `Mage::helper('htmldom')->file_get_html('foo.bar')`!
 
 ```php
@@ -248,6 +261,7 @@ if(isset($e->href))
 ```
 
 **Magic attributes**
+
 **Remember** to call the methods on the Magento helper object: `Mage::helper('htmldom')` e.g.: `Mage::helper('htmldom')->file_get_html('foo.bar')`!
 
 ```php
@@ -269,6 +283,7 @@ echo $e->plaintext; // Returns: " foo bar"
 | $e->**plaintext** 		| Read or write the **plain text** of element. 			|
 
 **Tips**
+
 **Remember** to call the methods on the Magento helper object: `Mage::helper('htmldom')` e.g.: `Mage::helper('htmldom')->file_get_html('foo.bar')`!
 
 ```php
@@ -292,6 +307,7 @@ $e->outertext = '<div>foo<div>' . $e->outertext;
 ## How to traverse the DOM tree?
 
 **Background knowledge**
+
 **Remember** to call the methods on the Magento helper object: `Mage::helper('htmldom')` e.g.: `Mage::helper('htmldom')->file_get_html('foo.bar')`!
 
 ```php
@@ -304,6 +320,7 @@ echo $html->getElementById("div1")->childNodes(1)->childNodes(1)->childNodes(2)-
 ```
 
 **Traverse the DOM tree**
+
 **Remember** to call the methods on the Magento helper object: `Mage::helper('htmldom')` e.g.: `Mage::helper('htmldom')->file_get_html('foo.bar')`!
 
 You can also call methods with [**Camel naming convertions**](http://simplehtmldom.sourceforge.net/manual_api.htm#camel).
@@ -322,6 +339,7 @@ You can also call methods with [**Camel naming convertions**](http://simplehtmld
 ## How to dump contents of DOM object?
 
 **Quik way**
+
 **Remember** to call the methods on the Magento helper object: `Mage::helper('htmldom')` e.g.: `Mage::helper('htmldom')->file_get_html('foo.bar')`!
 
 ```php
@@ -333,6 +351,7 @@ echo $html;
 ```
 
 **Object-oriented way**
+
 **Remember** to call the methods on the Magento helper object: `Mage::helper('htmldom')` e.g.: `Mage::helper('htmldom')->file_get_html('foo.bar')`!
 
 ```php
@@ -347,6 +366,7 @@ $html->save('result.htm');
 ## How to customize the parsing behavior?
 
 **Callback function**
+
 **Remember** to call the methods on the Magento helper object: `Mage::helper('htmldom')` e.g.: `Mage::helper('htmldom')->file_get_html('foo.bar')`!
 
 ```php
