@@ -28,7 +28,7 @@ Copy the app folder into your Magento 1.X installation's root folder. Empty the 
 ?>
 ```
 
-# The riginal documentation:
+# The original documentation:
 
 ## Quick Start
 
