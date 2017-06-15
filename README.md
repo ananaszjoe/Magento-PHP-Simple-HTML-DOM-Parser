@@ -4,7 +4,7 @@ A Magento 1.X extension made to host S.C. Chen's parser [(http://simplehtmldom.s
 ## DISCLAIMER
 This extension is entirely based on the HTML parser made by S.C Chen (me578022@gmail.com) which is available [here](http://simplehtmldom.sourceforge.net/) with its original documentation.
 
-######I won't actively support this and it is as it is. So if you find any issues or want to mix things up, that's up to you.
+###### I won't actively support this and it is as it is. So if you find any issues or want to mix things up, that's up to you.
 ---
 
 # Overview
