@@ -282,6 +282,8 @@ echo $e->plaintext; // Returns: " foo bar"
 | $e->**innertext**	 		| Read or write the **inner HTML text** of element. 	|
 | $e->**plaintext** 		| Read or write the **plain text** of element. 			|
 
+
+
 **Tips**
 
 **Remember** to call the methods on the Magento helper object: `Mage::helper('htmldom')` e.g.: `Mage::helper('htmldom')->file_get_html('foo.bar')`!
@@ -302,6 +304,8 @@ $e->outertext = $e->outertext . '<div>foo<div>';
 // Insert a element
 $e->outertext = '<div>foo<div>' . $e->outertext;
 ```
+**!!! This messes up the DOM structure and stringifies the elements. To be abe to manipulate DOM again afer append, insert etc, do this after such a manouvre:**
+```$e = Mage::helper('htmldom')->str_get_html($e->outertext);```
 
 
 ## How to traverse the DOM tree?
